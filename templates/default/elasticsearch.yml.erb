@@ -348,6 +348,10 @@ http.cors.allow-origin : "*"
 #
 # For more information, see <https://github.com/elasticsearch/elasticsearch-cloud-azure>.
 
+discovery.zen.minimum_master_nodes: 2
+discovery.zen.ping.unicast.hosts: [<%= node['elastic']['clusternodes'] %>]
+discovery.zen.fd.ping_timeout: "3s"
+
 ################################## Slow Log ##################################
 
 # Shard level query and fetch threshold logging.
