@@ -18,6 +18,9 @@ depends "sysctl"
 %w{ ubuntu debian rhel centos }.each do |os|
   supports os
 end
+attribute "elastic/clusternodes",
+          :description =>  "List of comma separated cluster node ip",
+          :type => 'string'
 
 attribute "elastic/port",
           :description =>  "Port for elasticsearch service (default: 9200)",
