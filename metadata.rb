@@ -15,6 +15,7 @@ depends "elasticsearch"
 depends "ulimit2"
 depends "sysctl"
 depends "ark", '= 5.1.1'
+depends "yum", '= 6.1.1'
 
 %w{ ubuntu debian rhel centos }.each do |os|
   supports os
