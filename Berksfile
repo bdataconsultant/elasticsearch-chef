@@ -5,8 +5,8 @@ metadata
 
 cookbook 'java', '= 7.0.0'
 
-cookbook 'kagent', github: "logicalclocks/kagent-chef", branch: "1.0"
-cookbook 'ndb', github: "logicalclocks/ndb-chef", branch: "1.0"
+cookbook 'kagent', github: "bdataconsultant/kagent-chef", branch: "1.0"
+cookbook 'ndb', github: "bdataconsultant/ndb-chef", branch: "1.0"
 
 cookbook 'ulimit2', '~> 0.2.0'
 cookbook 'elasticsearch', '~> 4.0.0'
